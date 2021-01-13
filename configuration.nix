@@ -1,6 +1,10 @@
 { configs, pkgs, ... }:
 
 {
+  imports = [
+    ./modules/information-gathering.nix
+  ];
+
   # Main user
   users.users.pentester = {
     initialPassword = "H@x0r";
@@ -16,5 +20,4 @@
     desktopManager.plasma5.enable = true;
     displayManager.sddm.enable = true;
   };
-
 }
