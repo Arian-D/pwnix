@@ -19,7 +19,7 @@
     };
 
     iso = self.nixosConfigurations.pwnix.config.system.build.isoImage;
-    vm = self.nixosConfigurations.pwnix.config.system.build.vmImage;
+    vm = self.nixosConfigurations.pwnix.config.system.build.vm;
   };
 
 }
